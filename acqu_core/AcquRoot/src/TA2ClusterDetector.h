@@ -32,6 +32,7 @@
 
 #ifdef WITH_A2DISPLAY
 #include "a2display.h"
+#define MAX_DISP_CLUSTERS 8
 #endif
 
 // constants for command-line maps
@@ -75,8 +76,9 @@ class TA2ClusterDetector : public TA2Detector {
   Bool_t fIsIterate;                    // cluster member find iteration ON/OFF
 #ifdef WITH_A2DISPLAY
   Bool_t fDispClusterEnable;
-  TH2Crystals* fDispClusterHitsSingle;
-  TH2Crystals* fDispClusterHitsEnergy;  
+  TH2Crystals*  fDispClusterHitsAll;
+  TH2Crystals** fDispClusterHitsSingle;  
+  TH2Crystals*  fDispClusterHitsEnergy;
   void DisplayClusters();
 #endif
  public:
