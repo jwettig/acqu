@@ -59,6 +59,7 @@
 #pragma link C++ class TA2FPMicro;
 #pragma link C++ class TA2PairSpec+;
 #pragma link C++ class TA2Moeller+;
+#pragma link C++ class TA2MarcCB_NaICalib+;
 // Utility classes...components of detectors etc
 #pragma link C++ class TA2Event+;
 #pragma link C++ class TA2KFParticle+;
