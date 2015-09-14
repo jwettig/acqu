@@ -1,0 +1,233 @@
+#------------------------------------------------------------------------------
+#                 Configuration file for MC data processing
+#             (AcquRoot 4v4 user package demonstration analysis)
+#------------------------------------------------------------------------------
+#
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#Number of Input streams (sources of data), record length to write data
+#and switch 0/1 = no/yes to control data write
+#               No. of streams Record Len  Save Data
+Input-Streams:  1              327680       0
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#Optional directory spec. If not specified 'File-Name's must contain the full
+#directory path
+#File-Directory: /mnt/Data/calib/
+File-Directory: /mnt/Data/2015_08_PMT_source/
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#Specify each input stream
+#From disk file, ACQU (Mk1) format, save any output to file (save=1)
+#input data record length, output data record length
+#               Source  Format  Save?  RecLen   Buffers  Swap  MarkID
+Stream-Spec:    File    Mk2     0      327680   32      0     400
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#List of data files to analyse
+#           File Name     First rec  Last rec
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+# Source data
+#File-Name:	Compton_824.dat	0 0
+#File-Name:	Compton_825.dat	0 0
+#File-Name:	Compton_826.dat	0 0
+#File-Name:	Compton_827.dat	0 0
+#File-Name:	Compton_828.dat	0 0
+#File-Name:	Compton_829.dat	0 0
+#File-Name:	Compton_830.dat	0 0
+#File-Name:	Compton_831.dat	0 0
+#File-Name:	Compton_832.dat	0 0
+#File-Name:	Compton_833.dat	0 0
+#File-Name:	Compton_834.dat	0 0
+#File-Name:	Compton_835.dat	0 0
+#File-Name:	Compton_837.dat	0 0
+#File-Name:	calib_886.dat	0 0
+#File-Name:	calib_894.dat	0 0
+#
+# Reference dat for calibration
+#File-Name:     calib_906.dat   0 0
+#File-Name:     calib_908.dat   0 0
+#File-Name:     calib_910.dat   0 0
+#File-Name:     calib_913.dat   0 0
+#File-Name:     calib_917.dat   0 0
+#File-Name:     calib_921.dat   0 0
+#File-Name:     calib_922.dat   0 0
+#
+#Calibration second run
+#File-Name:     AcquDAQ_1014.dat   0 0
+#File-Name:     AcquDAQ_1016.dat   0 0
+#File-Name:     AcquDAQ_1017.dat   0 0
+#File-Name:     AcquDAQ_1018.dat   0 0
+#File-Name:     AcquDAQ_1019.dat   0 0
+#File-Name:     AcquDAQ_1021.dat   0 0
+#File-Name:     AcquDAQ_1022.dat   0 0
+#
+#Calibration third run
+#File-Name:     AcquDAQ_1040.dat   0 0
+#File-Name:     AcquDAQ_1041.dat   0 0
+#File-Name:     AcquDAQ_1042.dat   0 0
+#File-Name:     AcquDAQ_1043.dat   0 0
+#File-Name:     AcquDAQ_1044.dat   0 0
+#File-Name:     AcquDAQ_1045.dat   0 0
+#File-Name:     AcquDAQ_1046.dat   0 0
+#
+#cosmics
+#File-Name:     AcquDAQ_1047.dat   0 0
+#
+#reference 08.03.13
+#File-Name:     Feb_RunTest_44.dat   0 0
+#File-Name:     Feb_RunTest_47.dat   0 0
+#File-Name:     Feb_RunTest_49.dat   0 0
+#File-Name:     Feb_RunTest_50.dat   0 0
+#
+#reference 04.04.13
+#File-Name:     Run_Draft_534.dat   0 0
+#File-Name:     Run_Draft_544.dat   0 0
+#File-Name:     Run_Draft_545.dat   0 0
+#File-Name:     Run_Draft_548.dat   0 0
+#
+#reference 07.04.13
+#File-Name:     Run_Draft_553.dat   0 0
+#File-Name:     Run_Draft_554.dat   0 0
+#File-Name:     Run_Draft_555.dat   0 0
+#File-Name:     Run_Draft_556.dat   0 0
+#
+#reference 17.06.13 before dismount
+#File-Name:     Run_Calib_Jun13_2161.dat   0 0
+#File-Name:     Run_Calib_Jun13_2162.dat   0 0
+#File-Name:     Run_Calib_Jun13_2163.dat   0 0
+#File-Name:     Run_Calib_Jun13_2164.dat   0 0
+#File-Name:     Run_Calib_Jun13_2165.dat   0 0
+#File-Name:     Run_Calib_Jun13_2166.dat   0 0
+#File-Name:     Run_Calib_Jun13_2167.dat   0 0
+#File-Name:     Run_Calib_Jun13_2168.dat   0 0
+#
+#vfdfgea 12.07.13 after dismount (broken?)
+#File-Name:     Run_Calib_Jul13_743.dat   0 0
+#
+# source data 13.07.13 after installation
+#File-Name:     Run_Calib_Jul13_747.dat   0 0
+#File-Name:     Run_Calib_Jul13_748.dat   0 0
+#File-Name:     Run_Calib_Jul13_749.dat   0 0
+#
+######## testing voltage dependencies CBHV07
+# 1450V
+#File-Name:     Run_Calib_Jul13_763.dat   0 0
+# 1490V
+#File-Name:     Run_Calib_Jul13_769.dat   0 0
+# 1500V
+#File-Name:     Run_Calib_Jul13_762.dat   0 0
+# 1510V
+#File-Name:     Run_Calib_Jul13_768.dat   0 0
+# 1520V
+#File-Name:     Run_Calib_Jul13_767.dat   0 0
+# 1530V
+#File-Name:     Run_Calib_Jul13_766.dat   0 0
+# 1540V
+#File-Name:     Run_Calib_Jul13_765.dat   0 0
+# 1550V
+#File-Name:     Run_Calib_Jul13_764.dat   0 0
+#
+########## Calib data curves
+# 1440V
+#File-Name:     Run_Calib_Jul13_853.dat   0 0
+#File-Name:     Run_Calib_Jul13_854.dat   0 0
+#File-Name:     Run_Calib_Jul13_855.dat   0 0
+#
+# 1460V
+#File-Name:     Run_Calib_Jul13_850.dat   0 0
+#File-Name:     Run_Calib_Jul13_851.dat   0 0
+#File-Name:     Run_Calib_Jul13_852.dat   0 0
+#
+# 1480V
+#File-Name:     Run_Calib_Jul13_847.dat   0 0
+#File-Name:     Run_Calib_Jul13_848.dat   0 0
+#File-Name:     Run_Calib_Jul13_849.dat   0 0
+#
+# 1500V
+#File-Name:     Run_Calib_Jul13_809.dat   0 0
+#File-Name:     Run_Calib_Jul13_810.dat   0 0
+#File-Name:     Run_Calib_Jul13_811.dat   0 0
+#File-Name:     Run_Calib_Jul13_812.dat   0 0
+#File-Name:     Run_Calib_Jul13_813.dat   0 0
+#File-Name:     Run_Calib_Jul13_843.dat   0 0
+#File-Name:     Run_Calib_Jul13_844.dat   0 0
+#
+# 1520V
+#File-Name:     Run_Calib_Jul13_814.dat   0 0
+#File-Name:     Run_Calib_Jul13_815.dat   0 0
+#File-Name:     Run_Calib_Jul13_816.dat   0 0
+#File-Name:     Run_Calib_Jul13_817.dat   0 0
+#File-Name:     Run_Calib_Jul13_818.dat   0 0
+#File-Name:     Run_Calib_Jul13_845.dat   0 0
+#File-Name:     Run_Calib_Jul13_846.dat   0 0
+#
+# 1540V
+#File-Name:     Run_Calib_Jul13_819.dat   0 0
+#File-Name:     Run_Calib_Jul13_820.dat   0 0
+#
+# 1560V
+#File-Name:     Run_Calib_Jul13_821.dat   0 0
+#File-Name:     Run_Calib_Jul13_822.dat   0 0
+#
+# 1580V
+#File-Name:     Run_Calib_Jul13_834.dat   0 0
+#File-Name:     Run_Calib_Jul13_835.dat   0 0
+#File-Name:     Run_Calib_Jul13_836.dat   0 0
+#File-Name:     Run_Calib_Jul13_837.dat   0 0
+#
+# 1600V
+#File-Name:     Run_Calib_Jul13_838.dat   0 0
+#File-Name:     Run_Calib_Jul13_839.dat   0 0
+#
+# 1620V
+#File-Name:     Run_Calib_Jul13_840.dat   0 0
+#File-Name:     Run_Calib_Jul13_841.dat   0 0
+#File-Name:     Run_Calib_Jul13_842.dat   0 0
+#
+########## Reference 01.Sep 13 with calibration!! :)
+#
+#File-Name:     Run_Calib_Jul13_856.dat   0 0
+#File-Name:     Run_Calib_Jul13_857.dat   0 0
+#File-Name:     Run_Calib_Jul13_858.dat   0 0
+#File-Name:     Run_Calib_Jul13_859.dat   0 0
+#File-Name:     Run_Calib_Jul13_860.dat   0 0
+#
+########## Reference 05. Nov 2013 new DAQ and calibration
+#
+#File-Name:     CBTagg_37.dat   0 0
+#File-Name:     CBTagg_38.dat   0 0
+#File-Name:     CBTagg_39.dat   0 0
+#
+########## Reference 06. Nov 2013 new DAQ and 1500V
+#
+#File-Name:     CBTagg_57.dat   0 0
+#File-Name:     CBTagg_58.dat   0 0
+#File-Name:     CBTagg_59.dat   0 0
+#
+######### testdaten
+#
+#File-Name:			CBTaggTAPS_2080.dat	0	0
+#File-Name:			CBTaggTAPS_2081.dat	0	0
+#File-Name:			CBTaggTAPS_2082.dat	0	0
+#File-Name:			CBTaggTAPS_2083.dat	0	0
+#
+######### PMT tests /2015_08_PMT_source
+#
+#new PTMs linear base all 1500V
+#File-Name:			CBTagg_10103.dat	0	0
+#new PTMs linear base R329: 1325V, R2154: 1250V, ET: 1636V 
+#File-Name:			CBTagg_10105.dat	0	0
+#new PMTs standard base R329: 1500V, R2154: 1300V, ET: 1500V
+#File-Name:			CBTagg_10106.dat	0	0
+#new PMTs standard base all 1250V 
+#File-Name:			CBTagg_10109.dat	0	0
+#File-Name:			CBTagg_10110.dat	0	0
+#?
+#File-Name:			CBTagg_10111.dat	0	0
+#old PMTs (calibration values) & holes filled (59: ET 1600V, 89: R329 1300V)
+File-Name:			CBTagg_10115.dat	0	0
+File-Name:			CBTagg_10116.dat	0	0

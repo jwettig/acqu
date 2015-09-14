@@ -1,0 +1,32 @@
+########################################################################
+## Parameter File: CBCalib.Offline
+########################################################################
+## Master parameter file for Acqu-Root analysis.
+## Expected to reside in directory $acqu/data/
+## To use invoke for example... AcquRoot data/CBCalib.Offline
+########################################################################
+#
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+##        Tree Name     	# branches	Process Type
+Name:     RawEvent_AR_Save	3		Raw
+##        Branch Name		Buffer size
+Branch:   RawEvent_Hits		32768
+Branch:	  RawEvent_Scalers	4192
+Branch:	  Mk1_Header            120000
+#
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#Directory to save any created ROOT files (include final '/')
+Directory:  /scratch/
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#Class name for analysis class to be used in further processing
+Analysis:      TA2UserAnalysis
+#Configuration file for selected analysis class
+AnalysisSetup: CBCalibAnalysis.dat
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#Configuration file for data source
+ServerSetup: CBCalibServer.dat
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#

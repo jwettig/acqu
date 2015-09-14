@@ -1,0 +1,23 @@
+#------------------------------------------------------------------------------
+#                         Configuration file for TA2CB
+#           (AcquRoot 4v3 user package Crystal Ball apparatus class)
+#------------------------------------------------------------------------------
+#
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#Detector systems in CB apparatus
+#         Name       Class Name      Setup file
+#Detector: NaI        TA2CalArray     CB_NaI_uncal.dat
+Detector: NaI        TA2MarcCB_NaICalib     CB_NaI_uncal.dat
+#Detector: NaI        TA2MarcCB_NaICalib     CB_NaI.dat
+#Detector: NaI        TA2MarcCB_NaICalib     CB_NaI.TF
+#
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#Standard AcquRoot options
+Reconstruct:
+ParticleID:	64
+Initialise:
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#Allows an overall position shift for CB NaI crystals
+#May be useful for misaligned target positions
+Misc: PosShift +0.0 +0.0 +0.0
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
